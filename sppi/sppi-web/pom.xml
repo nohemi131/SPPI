@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.gs.sppi</groupId>
+    <artifactId>sppi</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>sppi-web</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>sppi-web-presentation-layer</module>
+  </modules>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.gs.sppi</groupId>
+  		<artifactId>sppi-commons-entities</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.gs.sppi</groupId>
+  		<artifactId>sppi-commons-utilities</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
+</project>
