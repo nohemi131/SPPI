@@ -74,7 +74,6 @@ public class SpExampleDAOImpl extends Constants implements ISpExampleDAO{
 			log.error("Mensaje Error " +ex.fillInStackTrace());
 			example.setCode(-1);
 			example.setMessage(ex.getMessage());
-			return example;
 		}
 		
 		double elapsedTime = TimeUtil.getElapsedTime(startTime);

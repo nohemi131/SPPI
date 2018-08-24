@@ -12,7 +12,6 @@
 	<modules>
 		<module>sppi-ws-client</module>
 		<module>sppi-ws-core</module>
-		<module>sppi-ws-presentation</module>
 	</modules>
 	<dependencies>
 		<dependency>
