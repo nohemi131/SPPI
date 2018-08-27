@@ -21,6 +21,11 @@
 			<artifactId>ojdbc7</artifactId>
 			<version>${ojdbc.version}</version>
 		</dependency>
+		<dependency>
+	  		<groupId>javax.servlet</groupId>
+	  		<artifactId>javax.servlet-api</artifactId>
+	  		<version>${javax.servlet-api.version}</version>
+	  	</dependency>
 	</dependencies>
   <modules>
   	<module>sppi-ws-core-presentation-layer</module>
