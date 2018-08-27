@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Plantilla comun (web publico) -->
+	<definition name="template" template="/WEB-INF/paginas/templates/general/template.jsp" >
+		<put-attribute name="title"  value="SPPI" />
+		<put-attribute name="header" value="/WEB-INF/paginas/templates/general/header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/paginas/templates/general/footer.jsp" />
+	</definition>
+
+	<!--  Home  -->
+	<definition name="HomeController.index" template="/WEB-INF/paginas/publico/login/login.jsp">
+		<put-attribute name="title" value="Login" />
+	</definition>
+
+	<definition name="HomeController.notAllowed" template="/WEB-INF/paginas/publico/notallowed/notallowed.jsp">
+		<put-attribute name="title" value="Not Allowed" />
+	</definition>
+
+	<definition name="ErrorsController.error" template="/WEB-INF/paginas/publico/error/error.jsp">
+		<put-attribute name="title" value="Error" />
+	</definition>
+	
+	<definition name="DeniedController.denied" template="/WEB-INF/paginas/publico/denied/denied.jsp">
+		<put-attribute name="title" value="Error" />
+	</definition>	
+
+	<!--  LOGIN  -->
+	<definition name="LoginController.login" template="/WEB-INF/paginas/publico/login/login.jsp">
+		<put-attribute name="title" value="Login" />
+	</definition>			
+
+	<!--  HEADER  -->
+	<definition name="HomeController.header" template="/WEB-INF/paginas/templates/general/private/headerrefresh.jsp">
+		<put-attribute name="title" value="Header" />
+	</definition>	
+
+	<!-- Parte Privada -->
+	<definition name="bar.navigation.principal" template="/WEB-INF/paginas/templates/general/private/contentbarnav.jsp">
+		<put-attribute name="MapNav" value="Principal" />
+	</definition>
+	<definition name="PrincipalController.home" template="/WEB-INF/paginas/private/principal/principal.jsp" >
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="MapNavPage" value="bar.navigation.principal" />
+	</definition>
+	
+	<!-- ****************************** Common Modal NO DATA ****************************** -->
+	<definition name="bar.navigation.principal.nodata" template="/WEB-INF/paginas/templates/general/private/contentbarnav.jsp" >
+																
+		<put-attribute name="title" value="Modal" />
+		<put-attribute name="MapNav" value="barnav.principal.company.sales.details"/>
+	</definition>
+	<definition name="PrincipalController.nodata" template="/WEB-INF/paginas/private/modal/nodataModal.jsp">
+	 														
+		<put-attribute name="title" value="Modal" />
+		<put-attribute name="MapNavPage" value="bar.navigation.principal.nodata"/>
+	</definition>
+	<definition name="PrincipalController.messageModal" template="/WEB-INF/paginas/private/modal/messageModal.jsp">
+		<put-attribute name="title" value="Modal" />
+		<put-attribute name="MapNavPage" value="bar.navigation.principal.nodata"/>
+	</definition>
+	
+	
+	<definition name="PrincipalController.pathModal" template="/WEB-INF/paginas/private/modal/pathModal.jsp">
+		<put-attribute name="title" value="Modal" />
+		<put-attribute name="MapNavPage" value="bar.navigation.principal.nodata"/>
+	</definition>
+	
+	
+	
+	
+	<!-- ****************************** Designer ****************************** -->	
+	<definition name="DesignerController.home" template="/WEB-INF/paginas/private/designer/designer.jsp" >
+		<put-attribute name="title" value="Designer" />
+		<put-attribute name="MapNavPage" value="bar.navigation.principal" />
+	</definition>
+	
+	<!-- ****************************** Preview ****************************** -->	
+	<definition name="PreviewController.home" template="/WEB-INF/paginas/private/preview/preview.jsp" >
+		<put-attribute name="title" value="Designer" />
+		<put-attribute name="MapNavPage" value="bar.navigation.principal" />
+	</definition>
+	
+</tiles-definitions>

@@ -10,19 +10,19 @@
 		<junit.version>4.8.2</junit.version>
 		 
 		<!-- Spring version --> 
-		<spring.version>4.3.16.RELEASE</spring.version>
-		<spring.security.version>4.0.0.RELEASE</spring.security.version>
+		 <spring.version>4.3.10.RELEASE</spring.version>
+		 <spring.security.version>4.2.3.RELEASE</spring.security.version>
 		<spring.batch.version>3.0.9.RELEASE</spring.batch.version>
 		 
 		<!-- Ws version --> 
-		<jersey.version>2.6</jersey.version>
+		<jersey.version>2.13</jersey.version>
 		<jackson.version>2.6.4</jackson.version>
 		 
 		 <!-- Maven version --> 
 		<maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
 		
 		<!-- WEB version --> 
-		<javax.servlet-api.version>2.5</javax.servlet-api.version>
+		<javax.servlet-api.version>3.1.0</javax.servlet-api.version>
 		<tiles.version>3.0.5</tiles.version>		 
 		<jstl.version>1.2</jstl.version>
 		 
@@ -105,14 +105,6 @@
         <artifactId>cglib</artifactId>
         <version>2.2</version>
     </dependency>
-
-
-	<!-- acceso al http request y response-->
-	<dependency>
-	    <groupId>javax.servlet</groupId>
-	    <artifactId>servlet-api</artifactId>
-	    <version>${javax.servlet-api.version}</version>
-	</dependency>
 	
   	<!-- Encriptacion -->	
   	<dependency>

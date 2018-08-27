@@ -1,6 +1,4 @@
-package com.gs.sppi.web.controller.pub.principal;
-
-
+package com.gs.sppi.web.controller.pub.home;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -12,17 +10,25 @@ import org.springframework.web.servlet.ModelAndView;
 
 
 @Controller
-public class PrincipalController {
+public class HomeController {
 
-	
 	@RequestMapping( value="/", method= {RequestMethod.GET, RequestMethod.POST})
 	public ModelAndView home(HttpServletRequest request,HttpSession session) {	
 		session.invalidate();
 		session.getId();
-		return new ModelAndView("PrincipalController.index");
+		return new ModelAndView("HomeController.index");
 	}
 
 
-	
+	@RequestMapping( value="/notAllowed", method= {RequestMethod.GET, RequestMethod.POST})
+	  public ModelAndView  notAllowed(HttpServletRequest request) {
+		  return new ModelAndView("HomeController.notAllowed");
+	}
+
+
+	@RequestMapping( value="/header", method= {RequestMethod.GET, RequestMethod.POST})
+	  public ModelAndView  header(HttpServletRequest request) {
+		  return new ModelAndView("HomeController.header");
+	}
 
 }
